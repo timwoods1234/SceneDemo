@@ -1,0 +1,1 @@
+<Shader id="DiffuseRGB" technique="DiffuseRGB" vertexFormat="LitVertex" renderOrder="999" alphaBlending="false" zcompare="LessEq"/>

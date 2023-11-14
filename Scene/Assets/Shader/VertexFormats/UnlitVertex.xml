@@ -1,0 +1,4 @@
+<VertexFormat id="UnlitVertex">
+	<VertexElement size="float3" usage="position"/>
+	<VertexElement size="float2" usage="texcoord"/>
+</VertexFormat>

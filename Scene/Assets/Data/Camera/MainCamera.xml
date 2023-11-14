@@ -1,0 +1,2 @@
+<Camera name="MainCamera" width="640" height="480" fov="0.785" aspect="1.334" nearZ="1.0" farZ="5000.0" mode="perspective" mainCamera="true">
+</Camera>

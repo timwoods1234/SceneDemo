@@ -1,0 +1,5 @@
+<VertexFormat id="LitVertex">
+	<VertexElement size="float3" usage="position"/>
+	<VertexElement size="float3" usage="normal"/>
+	<VertexElement size="float2" usage="texcoord"/>
+</VertexFormat>

@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B02FF068-5461-4A41-90D4-76DCB3C2F595}</ProjectGuid>
+    <RootNamespace>TEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25123.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)\3rd Party\directx\include;$(ProjectDir)\3rd Party\fmod\include;$(ProjectDir)\3rd Party\assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>TENGINE_USE_AIMESH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AnchoredCamera.cpp" />
+    <ClCompile Include="ColliderPlugin.cpp" />
+    <ClCompile Include="ColliderPluginDefinition.cpp" />
+    <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="FixedCamera.cpp" />
+    <ClCompile Include="FreeCamera.cpp" />
+    <ClCompile Include="Intersection.cpp" />
+    <ClCompile Include="IntersectionPoints.cpp" />
+    <ClCompile Include="LightPlugin.cpp" />
+    <ClCompile Include="LightPluginDefinition.cpp" />
+    <ClCompile Include="ModelPlugin.cpp" />
+    <ClCompile Include="ModelPluginDefinition.cpp" />
+    <ClCompile Include="SpritePlugin.cpp" />
+    <ClCompile Include="SpritePluginDefinition.cpp" />
+    <ClCompile Include="TAABB.cpp" />
+    <ClCompile Include="TAIMeshLoader.cpp" />
+    <ClCompile Include="TApplicationInterface.cpp" />
+    <ClCompile Include="TAtlas.cpp" />
+    <ClCompile Include="TAtlasEntry.cpp" />
+    <ClCompile Include="TAtlasManager.cpp" />
+    <ClCompile Include="TAudioConfig.cpp" />
+    <ClCompile Include="TAudioInterface.cpp" />
+    <ClCompile Include="TBitmap.cpp" />
+    <ClCompile Include="TBitmapFont.cpp" />
+    <ClCompile Include="TCamera.cpp" />
+    <ClCompile Include="TCameraController.cpp" />
+    <ClCompile Include="TCameraManager.cpp" />
+    <ClCompile Include="TConfig.cpp" />
+    <ClCompile Include="TConsole.cpp" />
+    <ClCompile Include="TConsoleCommandBase.cpp" />
+    <ClCompile Include="TConsoleCommand_Clear.cpp" />
+    <ClCompile Include="TConsoleCommand_LogMemoryUsage.cpp" />
+    <ClCompile Include="TConsoleCommand_Quit.cpp" />
+    <ClCompile Include="TConsoleCommand_ToggleStats.cpp" />
+    <ClCompile Include="TCursorManager.cpp" />
+    <ClCompile Include="TD3DDevice.cpp" />
+    <ClCompile Include="TD3DFont.cpp" />
+    <ClCompile Include="TD3DGraphicsFactory.cpp" />
+    <ClCompile Include="TD3DMeshBuffer.cpp" />
+    <ClCompile Include="TD3DRenderer.cpp" />
+    <ClCompile Include="TD3DShader.cpp" />
+    <ClCompile Include="TD3DUtil.cpp" />
+    <ClCompile Include="TD3DVertexFormat.cpp" />
+    <ClCompile Include="TD3DVertexFormatRegister.cpp" />
+    <ClCompile Include="TDataVariant.cpp" />
+    <ClCompile Include="TDebugRenderer.cpp" />
+    <ClCompile Include="TDirectInput.cpp" />
+    <ClCompile Include="TDirectSoundBuffer.cpp" />
+    <ClCompile Include="TDirectSoundSystem.cpp" />
+    <ClCompile Include="TEntity.cpp" />
+    <ClCompile Include="TEntityDefinition.cpp" />
+    <ClCompile Include="TError.cpp" />
+    <ClCompile Include="TEvent.cpp" />
+    <ClCompile Include="TEventRender.cpp" />
+    <ClCompile Include="TEventUIRender.cpp" />
+    <ClCompile Include="TEventUpdate.cpp" />
+    <ClCompile Include="TFileStream.cpp" />
+    <ClCompile Include="TFModSound.cpp" />
+    <ClCompile Include="TFModSoundSystem.cpp" />
+    <ClCompile Include="TFont.cpp" />
+    <ClCompile Include="TGameStateManager.cpp" />
+    <ClCompile Include="TGameStats.cpp" />
+    <ClCompile Include="TLightManager.cpp" />
+    <ClCompile Include="TLine.cpp" />
+    <ClCompile Include="TLocator.cpp" />
+    <ClCompile Include="TMath.cpp" />
+    <ClCompile Include="TMatrix.cpp" />
+    <ClCompile Include="TMemory.cpp" />
+    <ClCompile Include="TMemoryChunkInterface.cpp" />
+    <ClCompile Include="TMemoryHeap.cpp" />
+    <ClCompile Include="TMemoryManager.cpp" />
+    <ClCompile Include="TMemoryPool.cpp" />
+    <ClCompile Include="TMesh.cpp" />
+    <ClCompile Include="TMeshBufferInterface.cpp" />
+    <ClCompile Include="TMeshLoaderInterface.cpp" />
+    <ClCompile Include="TPlane.cpp" />
+    <ClCompile Include="TPlugin.cpp" />
+    <ClCompile Include="TPluginDefinition.cpp" />
+    <ClCompile Include="TPluginRegister.cpp" />
+    <ClCompile Include="TPluginRegisterEntry.cpp" />
+    <ClCompile Include="TQuaternion.cpp" />
+    <ClCompile Include="TrackingCamera.cpp" />
+    <ClCompile Include="TRefCountedObject.cpp" />
+    <ClCompile Include="TRenderableInterface.cpp" />
+    <ClCompile Include="TRendererInterface.cpp" />
+    <ClCompile Include="TRenderQueue.cpp" />
+    <ClCompile Include="TRenderQueueManager.cpp" />
+    <ClCompile Include="TResourceManager.cpp" />
+    <ClCompile Include="TResourcePool.cpp" />
+    <ClCompile Include="TSceneEntry.cpp" />
+    <ClCompile Include="TScreenOutputStream.cpp" />
+    <ClCompile Include="TServiceCreator.cpp" />
+    <ClCompile Include="TShader.cpp" />
+    <ClCompile Include="TSimpleScene.cpp" />
+    <ClCompile Include="TSkin.cpp" />
+    <ClCompile Include="TSound.cpp" />
+    <ClCompile Include="TSphere.cpp" />
+    <ClCompile Include="TSprite.cpp" />
+    <ClCompile Include="TSpriteDefinition.cpp" />
+    <ClCompile Include="TStreamInterface.cpp" />
+    <ClCompile Include="TString.cpp" />
+    <ClCompile Include="TStringBuilder.cpp" />
+    <ClCompile Include="TStringHelper.cpp" />
+    <ClCompile Include="TStringList.cpp" />
+    <ClCompile Include="TStringPool.cpp" />
+    <ClCompile Include="TStringPoolSearch.cpp" />
+    <ClCompile Include="TSurface2DMesh.cpp" />
+    <ClCompile Include="TTextStream.cpp" />
+    <ClCompile Include="TTexture.cpp" />
+    <ClCompile Include="TTimerInterface.cpp" />
+    <ClCompile Include="TUIButton.cpp" />
+    <ClCompile Include="TUIController.cpp" />
+    <ClCompile Include="TUICursor.cpp" />
+    <ClCompile Include="TUIEntity.cpp" />
+    <ClCompile Include="TUIGrid.cpp" />
+    <ClCompile Include="TUIGroup.cpp" />
+    <ClCompile Include="TUIHelper.cpp" />
+    <ClCompile Include="TUILabel.cpp" />
+    <ClCompile Include="TUIMapping.cpp" />
+    <ClCompile Include="TUIMappingContainer.cpp" />
+    <ClCompile Include="TUIScene.cpp" />
+    <ClCompile Include="TUISlider.cpp" />
+    <ClCompile Include="TUISprite.cpp" />
+    <ClCompile Include="TUIStateVisibility.cpp" />
+    <ClCompile Include="TUIVertexCache.cpp" />
+    <ClCompile Include="TUtil.cpp" />
+    <ClCompile Include="TVector2.cpp" />
+    <ClCompile Include="TVector3.cpp" />
+    <ClCompile Include="TVector4.cpp" />
+    <ClCompile Include="TVertexFormat.cpp" />
+    <ClCompile Include="TVertexFormatEntry.cpp" />
+    <ClCompile Include="TVertexFormatRegister.cpp" />
+    <ClCompile Include="TWaveFile.cpp" />
+    <ClCompile Include="TWindowsApplication.cpp" />
+    <ClCompile Include="TWindowsDebug.cpp" />
+    <ClCompile Include="TWindowsFileSystem.cpp" />
+    <ClCompile Include="TWindowsTimer.cpp" />
+    <ClCompile Include="TXMLFile.cpp" />
+    <ClCompile Include="TXMLReader.cpp" />
+    <ClCompile Include="TXMLStream.cpp" />
+    <ClCompile Include="TXMLWriter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnchoredCamera.h" />
+    <ClInclude Include="ColliderPlugin.h" />
+    <ClInclude Include="ColliderPluginDefinition.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="FixedCamera.h" />
+    <ClInclude Include="FreeCamera.h" />
+    <ClInclude Include="LightPlugin.h" />
+    <ClInclude Include="LightPluginDefinition.h" />
+    <ClInclude Include="LightType.h" />
+    <ClInclude Include="ModelPlugin.h" />
+    <ClInclude Include="ModelPluginDefinition.h" />
+    <ClInclude Include="SpritePlugin.h" />
+    <ClInclude Include="SpritePluginDefinition.h" />
+    <ClInclude Include="TAABB.h" />
+    <ClInclude Include="TAIMeshLoader.h" />
+    <ClInclude Include="TAllocHeader.h" />
+    <ClInclude Include="TApplicationInterface.h" />
+    <ClInclude Include="TAtlas.h" />
+    <ClInclude Include="TAtlasEntry.h" />
+    <ClInclude Include="TAtlasManager.h" />
+    <ClInclude Include="TAudioConfig.h" />
+    <ClInclude Include="TAudioInterface.h" />
+    <ClInclude Include="TBitmap.h" />
+    <ClInclude Include="TBitmapFont.h" />
+    <ClInclude Include="TCamera.h" />
+    <ClInclude Include="TCameraController.h" />
+    <ClInclude Include="TCameraManager.h" />
+    <ClInclude Include="TColor.h" />
+    <ClInclude Include="TConfig.h" />
+    <ClInclude Include="TConsole.h" />
+    <ClInclude Include="TConsoleCommandBase.h" />
+    <ClInclude Include="TConsoleCommand_Clear.h" />
+    <ClInclude Include="TConsoleCommand_LogMemoryUsage.h" />
+    <ClInclude Include="TConsoleCommand_Quit.h" />
+    <ClInclude Include="TConsoleCommand_ToggleStats.h" />
+    <ClInclude Include="TCursorEntry.h" />
+    <ClInclude Include="TCursorManager.h" />
+    <ClInclude Include="TD3DDevice.h" />
+    <ClInclude Include="TD3DEventDeviceLost.h" />
+    <ClInclude Include="TD3DEventDeviceReset.h" />
+    <ClInclude Include="TD3DFont.h" />
+    <ClInclude Include="TD3DGraphicsFactory.h" />
+    <ClInclude Include="TD3DMeshBuffer.h" />
+    <ClInclude Include="TD3DRenderer.h" />
+    <ClInclude Include="TD3DShader.h" />
+    <ClInclude Include="TD3DUtil.h" />
+    <ClInclude Include="TD3DVertexFormat.h" />
+    <ClInclude Include="TD3DVertexFormatRegister.h" />
+    <ClInclude Include="TDataVariant.h" />
+    <ClInclude Include="TDebugInterface.h" />
+    <ClInclude Include="TDebugRenderEntries.h" />
+    <ClInclude Include="TDebugRenderer.h" />
+    <ClInclude Include="TDirect3D.h" />
+    <ClInclude Include="TDirectInput.h" />
+    <ClInclude Include="TDirectionalLight.h" />
+    <ClInclude Include="TDirectSoundBuffer.h" />
+    <ClInclude Include="TDirectSoundSystem.h" />
+    <ClInclude Include="TDynamicArray.h" />
+    <ClInclude Include="TDynamicSet.h" />
+    <ClInclude Include="TEngine.h" />
+    <ClInclude Include="TEntity.h" />
+    <ClInclude Include="TEntityDefinition.h" />
+    <ClInclude Include="TError.h" />
+    <ClInclude Include="TEvent.h" />
+    <ClInclude Include="TEventHandler.h" />
+    <ClInclude Include="TEventHandlerBase.h" />
+    <ClInclude Include="TEventListener.h" />
+    <ClInclude Include="TEventParam.h" />
+    <ClInclude Include="TEventParamHandler.h" />
+    <ClInclude Include="TEventParamHandlerBase.h" />
+    <ClInclude Include="TEventRender.h" />
+    <ClInclude Include="TEventUIRender.h" />
+    <ClInclude Include="TEventUIUpdate.h" />
+    <ClInclude Include="TEventUpdate.h" />
+    <ClInclude Include="TFileStream.h" />
+    <ClInclude Include="TFileSystemInterface.h" />
+    <ClInclude Include="TFModSound.h" />
+    <ClInclude Include="TFModSoundSystem.h" />
+    <ClInclude Include="TFont.h" />
+    <ClInclude Include="TGameState.h" />
+    <ClInclude Include="TGameStateManager.h" />
+    <ClInclude Include="TGameStats.h" />
+    <ClInclude Include="TGraphicsFactoryInterface.h" />
+    <ClInclude Include="TInputInterface.h" />
+    <ClInclude Include="TInputMappings.h" />
+    <ClInclude Include="TLightManager.h" />
+    <ClInclude Include="TLine.h" />
+    <ClInclude Include="TLocator.h" />
+    <ClInclude Include="TMaterial.h" />
+    <ClInclude Include="TMath.h" />
+    <ClInclude Include="TMatrix.h" />
+    <ClInclude Include="TMemory.h" />
+    <ClInclude Include="TMemoryChunkInterface.h" />
+    <ClInclude Include="TMemoryHeap.h" />
+    <ClInclude Include="TMemoryManager.h" />
+    <ClInclude Include="TMemoryPool.h" />
+    <ClInclude Include="TMesh.h" />
+    <ClInclude Include="TMeshBufferInterface.h" />
+    <ClInclude Include="TMeshLoaderInterface.h" />
+    <ClInclude Include="TPlane.h" />
+    <ClInclude Include="TPlatform.h" />
+    <ClInclude Include="TPlugin.h" />
+    <ClInclude Include="TPluginDefinition.h" />
+    <ClInclude Include="TPluginRegister.h" />
+    <ClInclude Include="TPluginRegisterEntry.h" />
+    <ClInclude Include="TPointLight.h" />
+    <ClInclude Include="TQuaternion.h" />
+    <ClInclude Include="TrackingCamera.h" />
+    <ClInclude Include="TRay.h" />
+    <ClInclude Include="TRefCountedObject.h" />
+    <ClInclude Include="TRenderableInterface.h" />
+    <ClInclude Include="TRendererInterface.h" />
+    <ClInclude Include="TRenderQueue.h" />
+    <ClInclude Include="TRenderQueueEntry.h" />
+    <ClInclude Include="TRenderQueueManager.h" />
+    <ClInclude Include="TRenderState.h" />
+    <ClInclude Include="TResourceManager.h" />
+    <ClInclude Include="TResourcePool.h" />
+    <ClInclude Include="TResourceType.h" />
+    <ClInclude Include="TSceneEntry.h" />
+    <ClInclude Include="TSceneInterface.h" />
+    <ClInclude Include="TScreenOutputStream.h" />
+    <ClInclude Include="TServiceCreator.h" />
+    <ClInclude Include="TShader.h" />
+    <ClInclude Include="TSimpleScene.h" />
+    <ClInclude Include="TSingleton.h" />
+    <ClInclude Include="TSkin.h" />
+    <ClInclude Include="TSound.h" />
+    <ClInclude Include="TSphere.h" />
+    <ClInclude Include="TSpotLight.h" />
+    <ClInclude Include="TSprite.h" />
+    <ClInclude Include="TSpriteAnimation.h" />
+    <ClInclude Include="TSpriteDefinition.h" />
+    <ClInclude Include="TStreamInterface.h" />
+    <ClInclude Include="TString.h" />
+    <ClInclude Include="TStringBuilder.h" />
+    <ClInclude Include="TStringHelper.h" />
+    <ClInclude Include="TStringList.h" />
+    <ClInclude Include="TStringPool.h" />
+    <ClInclude Include="TStringPoolEntry.h" />
+    <ClInclude Include="TStringPoolSearch.h" />
+    <ClInclude Include="TSubMeshInfo.h" />
+    <ClInclude Include="TSurface2D.h" />
+    <ClInclude Include="TSurface2DMesh.h" />
+    <ClInclude Include="TTextStream.h" />
+    <ClInclude Include="TTexture.h" />
+    <ClInclude Include="TTimerInterface.h" />
+    <ClInclude Include="TTriangle.h" />
+    <ClInclude Include="TUIButton.h" />
+    <ClInclude Include="TUIController.h" />
+    <ClInclude Include="TUICursor.h" />
+    <ClInclude Include="TUIEntity.h" />
+    <ClInclude Include="TUIGrid.h" />
+    <ClInclude Include="TUIGroup.h" />
+    <ClInclude Include="TUIHelper.h" />
+    <ClInclude Include="TUILabel.h" />
+    <ClInclude Include="TUIMapping.h" />
+    <ClInclude Include="TUIMappingContainer.h" />
+    <ClInclude Include="TUIMappingHandler.h" />
+    <ClInclude Include="TUIScene.h" />
+    <ClInclude Include="TUISceneEntry.h" />
+    <ClInclude Include="TUISlider.h" />
+    <ClInclude Include="TUISprite.h" />
+    <ClInclude Include="TUIStateVisibility.h" />
+    <ClInclude Include="TUIVariableParameter.h" />
+    <ClInclude Include="TUIVariableResult.h" />
+    <ClInclude Include="TUIVertexCache.h" />
+    <ClInclude Include="TUtil.h" />
+    <ClInclude Include="TVector2.h" />
+    <ClInclude Include="TVector3.h" />
+    <ClInclude Include="TVector4.h" />
+    <ClInclude Include="TVertex.h" />
+    <ClInclude Include="TVertexFormat.h" />
+    <ClInclude Include="TVertexFormatEntry.h" />
+    <ClInclude Include="TVertexFormatRegister.h" />
+    <ClInclude Include="TVertexFormatTypes.h" />
+    <ClInclude Include="TVertexUI.h" />
+    <ClInclude Include="TWaveFile.h" />
+    <ClInclude Include="TWindowsApplication.h" />
+    <ClInclude Include="TWindowsDebug.h" />
+    <ClInclude Include="TWindowsFileSystem.h" />
+    <ClInclude Include="TWindowsTimer.h" />
+    <ClInclude Include="TXMLAttribute.h" />
+    <ClInclude Include="TXMLFile.h" />
+    <ClInclude Include="TXMLObject.h" />
+    <ClInclude Include="TXMLReader.h" />
+    <ClInclude Include="TXMLStream.h" />
+    <ClInclude Include="TXMLTagType.h" />
+    <ClInclude Include="TXMLWriter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TAABB.inl" />
+    <None Include="TDynamicArray.inl" />
+    <None Include="TDynamicSet.inl" />
+    <None Include="TEvent.inl" />
+    <None Include="TEventHandler.inl" />
+    <None Include="TEventHandlerBase.inl" />
+    <None Include="TEventParam.inl" />
+    <None Include="TEventParamHandler.inl" />
+    <None Include="TEventParamHandlerBase.inl" />
+    <None Include="TLine.inl" />
+    <None Include="TLocator.inl" />
+    <None Include="TMath.inl" />
+    <None Include="TMatrix.inl" />
+    <None Include="TPlane.inl" />
+    <None Include="TQuaternion.inl" />
+    <None Include="TRay.inl" />
+    <None Include="TSphere.inl" />
+    <None Include="TString.inl" />
+    <None Include="TUIMappingContainer.inl" />
+    <None Include="TUIMappingHandler.inl" />
+    <None Include="TVector2.inl" />
+    <None Include="TVector3.inl" />
+    <None Include="TVector4.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GridGenerator.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Heightmap.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneDemo.cpp">
+      <Filter>Game State</Filter>
+    </ClCompile>
+    <ClCompile Include="GameWorld.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="GrassBatcher.cpp">
+      <Filter>Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Sky.cpp">
+      <Filter>Sky</Filter>
+    </ClCompile>
+    <ClCompile Include="SphereCreator.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomNumberGenerator.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GridGenerator.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Heightmap.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneDemo.h">
+      <Filter>Game State</Filter>
+    </ClInclude>
+    <ClInclude Include="GameWorld.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="GrassBatcher.h">
+      <Filter>Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="GrassVertex.h">
+      <Filter>Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Sky.h">
+      <Filter>Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="PosVertex.h">
+      <Filter>Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="SphereCreator.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomNumberGenerator.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{26ce7e50-3b0b-4d43-a524-02a17e36d97b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Terrain">
+      <UniqueIdentifier>{806013b4-6b76-4187-9609-3f72eeb7de69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game State">
+      <UniqueIdentifier>{bc234fcd-4383-487a-818f-caa0bc494db8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World">
+      <UniqueIdentifier>{8dde6070-e8eb-4442-9a92-495cd99b719f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Grass">
+      <UniqueIdentifier>{75b46945-8ae8-4065-910f-2ff062967291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sky">
+      <UniqueIdentifier>{c031c903-bcc1-4d30-9daa-1aefb83f4cfe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

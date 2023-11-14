@@ -1,0 +1,1 @@
+<Terrain tex0="Assets/2D/terrain/grass.dds" tex1="Assets/2D/terrain/dirt.dds" tex2="Assets/2D/terrain/rock.dds" blendmap="Assets/2D/terrain/blend.dds" heightScale="0.3" heightmap="Assets/Data/heightmap.raw" width="257" depth="257" subGridCount="33" subGridScale="1"/>

@@ -1,0 +1,7 @@
+<VertexFormat id="GrassVertex">
+	<VertexElement size="float3" usage="position"/>
+	<VertexElement size="float3" usage="texcoord" usageIndex="0"/>
+	<VertexElement size="float2" usage="texcoord" usageIndex="1"/>
+	<VertexElement size="float1" usage="texcoord" usageIndex="2"/>
+	<VertexElement size="float4" usage="color"/>
+</VertexFormat>

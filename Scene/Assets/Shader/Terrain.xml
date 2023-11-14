@@ -1,0 +1,1 @@
+<Shader id="Terrain" technique="TerrainTech" vertexFormat="LitVertex" renderOrder="0" alphaBlending="false" zcompare="LessEq"/>

@@ -1,0 +1,3 @@
+<VertexFormat id="PosVertex">
+	<VertexElement size="float3" usage="position"/>
+</VertexFormat>

@@ -1,0 +1,1 @@
+<Shader id="StandardTex" technique="StandardTech" vertexFormat="LitVertex" renderOrder="0" alphaBlending="true" zcompare="LessEq"/>

@@ -1,0 +1,2 @@
+<Camera name="UICamera" width="640" height="480" fov="0.785" aspect="1.334" nearZ="-100.0" farZ="100.0" mode="orthographic" uiCamera="true">
+</Camera>

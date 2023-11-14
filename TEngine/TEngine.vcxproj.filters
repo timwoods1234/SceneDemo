@@ -1,0 +1,1265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{2551a065-bfd5-4307-8b2b-6d642d33531a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\FModSound">
+      <UniqueIdentifier>{d29e5a34-26b0-4102-aead-d27287933add}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\Config">
+      <UniqueIdentifier>{62e731f6-f61e-40bc-9e34-292d90050fc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\DirectSound">
+      <UniqueIdentifier>{63347610-4ef2-4cac-8d87-d6843f3c170a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{f4e5c2ae-950f-4733-9a13-d7eafe451b58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\DirectInput">
+      <UniqueIdentifier>{7916508f-7e6a-422f-bdad-005bf9e339e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{d079d75f-a606-4423-bb7c-21eb9ad090cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Types">
+      <UniqueIdentifier>{7d6fb6cd-09ff-4265-90a3-84e57227cbbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Geometry">
+      <UniqueIdentifier>{ff64a541-f776-4c51-9e12-c1cabe2d265f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering">
+      <UniqueIdentifier>{475354ce-afea-453e-b500-c9ec9c99aad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Camera">
+      <UniqueIdentifier>{ac252964-4356-4a18-b4ff-9bf7a6639df8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Camera\Controllers">
+      <UniqueIdentifier>{fdf32717-4a70-4fcf-8571-9d050385aefc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Atlas">
+      <UniqueIdentifier>{8bafa452-3c05-48c5-9302-901580c2b975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Sprite">
+      <UniqueIdentifier>{11537180-e33b-4f37-9ac0-30c140e3d220}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Sprite\Surface">
+      <UniqueIdentifier>{9f9b26f4-ff9e-4418-8c72-95f8ac0d6350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Mesh">
+      <UniqueIdentifier>{f95d6c2d-2535-4358-b3c8-0c0fbd4e26f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Mesh\Loader">
+      <UniqueIdentifier>{cf39ee11-523b-4bf8-9aba-905b15e7b208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Mesh\Loader\AssImp">
+      <UniqueIdentifier>{bc4767d9-0887-4d2d-9d6c-aac138e41eac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Mesh\VertexFormats">
+      <UniqueIdentifier>{c771c95f-30bb-4157-9613-7d7a9ef3eaed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Mesh\VertexFormats\D3D">
+      <UniqueIdentifier>{02f32d5a-c754-478b-8e3b-67b63b738c3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Mesh\D3D">
+      <UniqueIdentifier>{0e25906e-a668-4c23-827d-5982d8e1e285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Mesh\VertexTypes">
+      <UniqueIdentifier>{5c4d677b-64b1-40fe-9321-2ee30b95e7a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Shaders">
+      <UniqueIdentifier>{d6696637-c8dc-4a29-bca3-8d15e3025d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Shaders\D3D">
+      <UniqueIdentifier>{95345f3d-7680-485e-95ff-6c5441614a76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Renderer">
+      <UniqueIdentifier>{4540191d-7ee8-48ea-9347-f819540f3eb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Renderer\D3D">
+      <UniqueIdentifier>{fbdfcc6d-b15f-4b89-be69-875e9e447aa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Font">
+      <UniqueIdentifier>{a54d64ff-4522-4e5c-a94d-2efa4c897633}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Font\D3D">
+      <UniqueIdentifier>{48960dc2-282d-4bd4-b91e-795afec4023d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Font\BitmapFont">
+      <UniqueIdentifier>{af44c33b-036d-43fb-9637-1da8317bfbd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Graphics Factory">
+      <UniqueIdentifier>{e691507f-cdc1-4a98-9382-4730d6b1d4bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Graphics Factory\D3D">
+      <UniqueIdentifier>{fccfbf68-2713-4712-98d7-6addd88551dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Light">
+      <UniqueIdentifier>{6e93465a-79cd-43e3-a748-ead4a8a68351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File System">
+      <UniqueIdentifier>{cffa69be-435a-4215-b229-1e99c9337569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File System\Data">
+      <UniqueIdentifier>{037edc10-edd0-4494-a442-47b2cc7197b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File System\Stream">
+      <UniqueIdentifier>{38d7eb31-36c6-4f3c-a342-e82a09cf118d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File System\XML">
+      <UniqueIdentifier>{b280ebc5-55b2-4ce8-b28f-7ec00b2d3014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File System\Image">
+      <UniqueIdentifier>{17e353a4-2c0a-493c-a760-2458a25a54bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File System\Windows">
+      <UniqueIdentifier>{9d87d73a-c274-4573-9c7d-de8a54ee03dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File System\Resource Manager">
+      <UniqueIdentifier>{ab3b8d74-309b-4c7d-aae0-c04db9cbf9d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{456a5aeb-64b8-4314-8e5c-07a0af59dcc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug\Windows">
+      <UniqueIdentifier>{969b6528-93cd-4881-bcdf-bf909cbce6d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{f5a983d8-5406-41f0-8fff-ab2cc2c68e19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\TString">
+      <UniqueIdentifier>{95b7078e-2193-4b10-acb8-9f3544db2e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{7a909255-ee51-42aa-a4d5-87ad57e5fe2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Windows">
+      <UniqueIdentifier>{20c2e9a8-6f6b-44e7-bcf6-0bd05712820c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Console">
+      <UniqueIdentifier>{0899251c-36e3-4681-8307-ecb13ba6f5f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Console\Commands">
+      <UniqueIdentifier>{05263d5e-4f6f-4420-a9be-00abdc1b7025}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Include">
+      <UniqueIdentifier>{bb9af92a-5549-452c-b1b8-329fd429df69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Entity">
+      <UniqueIdentifier>{6f33968a-1b34-4aea-b138-3cc1cf8bdd56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Entity\DefaultPlugins">
+      <UniqueIdentifier>{f434a343-b91d-43fa-9250-c9c1c3105d6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Entity\Register">
+      <UniqueIdentifier>{46ff4364-ce01-4ed7-9b0f-4d3e2ad39e9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Event System">
+      <UniqueIdentifier>{987c3958-fb31-4f8f-9e02-f8c65e2ff3a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Event System\Handler">
+      <UniqueIdentifier>{a73ca382-daf2-4437-af62-96a91d678782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Event System\EventBase">
+      <UniqueIdentifier>{f14fc08f-e200-4bba-abd2-04767985d98a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Event System\Event">
+      <UniqueIdentifier>{9e834b6b-4922-4d4c-886b-80564ce9e0de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Game State">
+      <UniqueIdentifier>{6c00e695-4957-40e6-8780-62a0aa20ca23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Memory">
+      <UniqueIdentifier>{faca5588-dc90-4131-b7a0-1e728b5fe3ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Scene">
+      <UniqueIdentifier>{5ba7fd06-4171-4a6a-84cc-9f21f2c6c50f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Scene\Simple Scene">
+      <UniqueIdentifier>{e0f5d9d0-718a-4520-9b56-6321930440bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Timer">
+      <UniqueIdentifier>{f745d927-5858-4025-8aad-a1424297e273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Timer\Windows">
+      <UniqueIdentifier>{f0641982-83a5-4097-8afa-4edc6697345c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\UI">
+      <UniqueIdentifier>{0a6f4b3a-9ee4-4d16-bb8e-dd3b340e9efa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\UI\Mappings">
+      <UniqueIdentifier>{ef9559d7-a989-4339-8dbf-4f2817559ca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\UI\Plugins">
+      <UniqueIdentifier>{1b6973bf-7776-4458-83ab-eee3fdddefcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\UI\Scene">
+      <UniqueIdentifier>{3c8a037e-980e-40b4-b4ff-69130c30c8c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TAudioInterface.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="TSound.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="TFModSound.cpp">
+      <Filter>Audio\FModSound</Filter>
+    </ClCompile>
+    <ClCompile Include="TFModSoundSystem.cpp">
+      <Filter>Audio\FModSound</Filter>
+    </ClCompile>
+    <ClCompile Include="TAudioConfig.cpp">
+      <Filter>Audio\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="TDirectSoundBuffer.cpp">
+      <Filter>Audio\DirectSound</Filter>
+    </ClCompile>
+    <ClCompile Include="TDirectSoundSystem.cpp">
+      <Filter>Audio\DirectSound</Filter>
+    </ClCompile>
+    <ClCompile Include="TWaveFile.cpp">
+      <Filter>Audio\DirectSound</Filter>
+    </ClCompile>
+    <ClCompile Include="TCursorManager.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="TDirectInput.cpp">
+      <Filter>Input\DirectInput</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Intersection.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="IntersectionPoints.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="TMath.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="TMatrix.cpp">
+      <Filter>Math\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="TQuaternion.cpp">
+      <Filter>Math\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="TVector2.cpp">
+      <Filter>Math\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="TVector3.cpp">
+      <Filter>Math\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="TVector4.cpp">
+      <Filter>Math\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="TAABB.cpp">
+      <Filter>Math\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="TLine.cpp">
+      <Filter>Math\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="TPlane.cpp">
+      <Filter>Math\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="TSphere.cpp">
+      <Filter>Math\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="TSkin.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="TTexture.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="TCamera.cpp">
+      <Filter>Rendering\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="TCameraManager.cpp">
+      <Filter>Rendering\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="AnchoredCamera.cpp">
+      <Filter>Rendering\Camera\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="FixedCamera.cpp">
+      <Filter>Rendering\Camera\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeCamera.cpp">
+      <Filter>Rendering\Camera\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="TCameraController.cpp">
+      <Filter>Rendering\Camera\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackingCamera.cpp">
+      <Filter>Rendering\Camera\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="TAtlas.cpp">
+      <Filter>Rendering\Atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="TAtlasEntry.cpp">
+      <Filter>Rendering\Atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="TAtlasManager.cpp">
+      <Filter>Rendering\Atlas</Filter>
+    </ClCompile>
+    <ClCompile Include="TSprite.cpp">
+      <Filter>Rendering\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="TSpriteDefinition.cpp">
+      <Filter>Rendering\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="TSurface2DMesh.cpp">
+      <Filter>Rendering\Sprite\Surface</Filter>
+    </ClCompile>
+    <ClCompile Include="TUIVertexCache.cpp">
+      <Filter>Rendering\Sprite\Surface</Filter>
+    </ClCompile>
+    <ClCompile Include="TMesh.cpp">
+      <Filter>Rendering\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="TMeshBufferInterface.cpp">
+      <Filter>Rendering\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="TMeshLoaderInterface.cpp">
+      <Filter>Rendering\Mesh\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="TAIMeshLoader.cpp">
+      <Filter>Rendering\Mesh\Loader\AssImp</Filter>
+    </ClCompile>
+    <ClCompile Include="TVertexFormat.cpp">
+      <Filter>Rendering\Mesh\VertexFormats</Filter>
+    </ClCompile>
+    <ClCompile Include="TVertexFormatEntry.cpp">
+      <Filter>Rendering\Mesh\VertexFormats</Filter>
+    </ClCompile>
+    <ClCompile Include="TVertexFormatRegister.cpp">
+      <Filter>Rendering\Mesh\VertexFormats</Filter>
+    </ClCompile>
+    <ClCompile Include="TD3DVertexFormat.cpp">
+      <Filter>Rendering\Mesh\VertexFormats\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="TD3DVertexFormatRegister.cpp">
+      <Filter>Rendering\Mesh\VertexFormats\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="TD3DMeshBuffer.cpp">
+      <Filter>Rendering\Mesh\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="TRenderQueue.cpp">
+      <Filter>Rendering\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="TRenderQueueManager.cpp">
+      <Filter>Rendering\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="TShader.cpp">
+      <Filter>Rendering\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="TD3DShader.cpp">
+      <Filter>Rendering\Shaders\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="TRendererInterface.cpp">
+      <Filter>Rendering\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="TD3DDevice.cpp">
+      <Filter>Rendering\Renderer\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="TD3DRenderer.cpp">
+      <Filter>Rendering\Renderer\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="TD3DUtil.cpp">
+      <Filter>Rendering\Renderer\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="TFont.cpp">
+      <Filter>Rendering\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="TD3DFont.cpp">
+      <Filter>Rendering\Font\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="TBitmapFont.cpp">
+      <Filter>Rendering\Font\BitmapFont</Filter>
+    </ClCompile>
+    <ClCompile Include="TD3DGraphicsFactory.cpp">
+      <Filter>Rendering\Graphics Factory\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="TUIEntity.cpp">
+      <Filter>Rendering\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TUIGrid.cpp">
+      <Filter>Rendering\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TUIGroup.cpp">
+      <Filter>Rendering\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TUIHelper.cpp">
+      <Filter>Rendering\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TUIController.cpp">
+      <Filter>Rendering\UI\Mappings</Filter>
+    </ClCompile>
+    <ClCompile Include="TUIMapping.cpp">
+      <Filter>Rendering\UI\Mappings</Filter>
+    </ClCompile>
+    <ClCompile Include="TUIMappingContainer.cpp">
+      <Filter>Rendering\UI\Mappings</Filter>
+    </ClCompile>
+    <ClCompile Include="TUIButton.cpp">
+      <Filter>Rendering\UI\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="TUICursor.cpp">
+      <Filter>Rendering\UI\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="TUILabel.cpp">
+      <Filter>Rendering\UI\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="TUISlider.cpp">
+      <Filter>Rendering\UI\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="TUISprite.cpp">
+      <Filter>Rendering\UI\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="TUIStateVisibility.cpp">
+      <Filter>Rendering\UI\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="TUIScene.cpp">
+      <Filter>Rendering\UI\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TMemory.cpp">
+      <Filter>Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="TMemoryChunkInterface.cpp">
+      <Filter>Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="TMemoryHeap.cpp">
+      <Filter>Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="TMemoryManager.cpp">
+      <Filter>Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="TMemoryPool.cpp">
+      <Filter>Core\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="TDataVariant.cpp">
+      <Filter>File System\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="TFileStream.cpp">
+      <Filter>File System\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="TScreenOutputStream.cpp">
+      <Filter>File System\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="TStreamInterface.cpp">
+      <Filter>File System\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="TTextStream.cpp">
+      <Filter>File System\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="TXMLStream.cpp">
+      <Filter>File System\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="TXMLFile.cpp">
+      <Filter>File System\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="TXMLReader.cpp">
+      <Filter>File System\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="TXMLWriter.cpp">
+      <Filter>File System\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="TBitmap.cpp">
+      <Filter>File System\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="TWindowsFileSystem.cpp">
+      <Filter>File System\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="TRefCountedObject.cpp">
+      <Filter>File System\Resource Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="TResourceManager.cpp">
+      <Filter>File System\Resource Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="TResourcePool.cpp">
+      <Filter>File System\Resource Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="TDebugRenderer.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="TError.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="TWindowsDebug.cpp">
+      <Filter>Debug\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="TUtil.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="TString.cpp">
+      <Filter>Core\TString</Filter>
+    </ClCompile>
+    <ClCompile Include="TStringBuilder.cpp">
+      <Filter>Core\TString</Filter>
+    </ClCompile>
+    <ClCompile Include="TStringHelper.cpp">
+      <Filter>Core\TString</Filter>
+    </ClCompile>
+    <ClCompile Include="TStringList.cpp">
+      <Filter>Core\TString</Filter>
+    </ClCompile>
+    <ClCompile Include="TStringPool.cpp">
+      <Filter>Core\TString</Filter>
+    </ClCompile>
+    <ClCompile Include="TStringPoolSearch.cpp">
+      <Filter>Core\TString</Filter>
+    </ClCompile>
+    <ClCompile Include="TTimerInterface.cpp">
+      <Filter>Core\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="TWindowsTimer.cpp">
+      <Filter>Core\Timer\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="TRenderableInterface.cpp">
+      <Filter>Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TSceneEntry.cpp">
+      <Filter>Core\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TSimpleScene.cpp">
+      <Filter>Core\Scene\Simple Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TApplicationInterface.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="TConfig.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="TServiceCreator.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="TWindowsApplication.cpp">
+      <Filter>Application\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="TConsole.cpp">
+      <Filter>Application\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="TConsoleCommandBase.cpp">
+      <Filter>Application\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="TConsoleCommand_Clear.cpp">
+      <Filter>Application\Console\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="TConsoleCommand_LogMemoryUsage.cpp">
+      <Filter>Application\Console\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="TConsoleCommand_Quit.cpp">
+      <Filter>Application\Console\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="TConsoleCommand_ToggleStats.cpp">
+      <Filter>Application\Console\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="TEntity.cpp">
+      <Filter>Core\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="TEntityDefinition.cpp">
+      <Filter>Core\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="TPlugin.cpp">
+      <Filter>Core\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="TPluginDefinition.cpp">
+      <Filter>Core\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="ColliderPlugin.cpp">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="ColliderPluginDefinition.cpp">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelPlugin.cpp">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelPluginDefinition.cpp">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="SpritePlugin.cpp">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="SpritePluginDefinition.cpp">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="TPluginRegister.cpp">
+      <Filter>Core\Entity\Register</Filter>
+    </ClCompile>
+    <ClCompile Include="TPluginRegisterEntry.cpp">
+      <Filter>Core\Entity\Register</Filter>
+    </ClCompile>
+    <ClCompile Include="TEvent.cpp">
+      <Filter>Core\Event System\EventBase</Filter>
+    </ClCompile>
+    <ClCompile Include="TEventRender.cpp">
+      <Filter>Core\Event System\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="TEventUIRender.cpp">
+      <Filter>Core\Event System\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="TEventUpdate.cpp">
+      <Filter>Core\Event System\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="TGameStateManager.cpp">
+      <Filter>Core\Game State</Filter>
+    </ClCompile>
+    <ClCompile Include="TLightManager.cpp">
+      <Filter>Rendering\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="TLocator.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="TGameStats.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="LightPluginDefinition.cpp">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClCompile>
+    <ClCompile Include="LightPlugin.cpp">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TAudioInterface.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="TSound.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="TFModSound.h">
+      <Filter>Audio\FModSound</Filter>
+    </ClInclude>
+    <ClInclude Include="TFModSoundSystem.h">
+      <Filter>Audio\FModSound</Filter>
+    </ClInclude>
+    <ClInclude Include="TAudioConfig.h">
+      <Filter>Audio\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="TDirectSoundBuffer.h">
+      <Filter>Audio\DirectSound</Filter>
+    </ClInclude>
+    <ClInclude Include="TDirectSoundSystem.h">
+      <Filter>Audio\DirectSound</Filter>
+    </ClInclude>
+    <ClInclude Include="TWaveFile.h">
+      <Filter>Audio\DirectSound</Filter>
+    </ClInclude>
+    <ClInclude Include="TCursorEntry.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="TCursorManager.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="TInputInterface.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="TInputMappings.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="TDirectInput.h">
+      <Filter>Input\DirectInput</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="TMath.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="TMatrix.h">
+      <Filter>Math\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="TQuaternion.h">
+      <Filter>Math\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="TVector2.h">
+      <Filter>Math\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="TVector3.h">
+      <Filter>Math\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="TVector4.h">
+      <Filter>Math\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="TAABB.h">
+      <Filter>Math\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="TLine.h">
+      <Filter>Math\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="TPlane.h">
+      <Filter>Math\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="TRay.h">
+      <Filter>Math\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="TSphere.h">
+      <Filter>Math\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="TTriangle.h">
+      <Filter>Math\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="TColor.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="TMaterial.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="TSkin.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="TTexture.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="TCamera.h">
+      <Filter>Rendering\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="TCameraManager.h">
+      <Filter>Rendering\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="AnchoredCamera.h">
+      <Filter>Rendering\Camera\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="FixedCamera.h">
+      <Filter>Rendering\Camera\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeCamera.h">
+      <Filter>Rendering\Camera\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="TCameraController.h">
+      <Filter>Rendering\Camera\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackingCamera.h">
+      <Filter>Rendering\Camera\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="TAtlas.h">
+      <Filter>Rendering\Atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="TAtlasEntry.h">
+      <Filter>Rendering\Atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="TAtlasManager.h">
+      <Filter>Rendering\Atlas</Filter>
+    </ClInclude>
+    <ClInclude Include="TSprite.h">
+      <Filter>Rendering\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="TSpriteAnimation.h">
+      <Filter>Rendering\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="TSpriteDefinition.h">
+      <Filter>Rendering\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="TSurface2D.h">
+      <Filter>Rendering\Sprite\Surface</Filter>
+    </ClInclude>
+    <ClInclude Include="TSurface2DMesh.h">
+      <Filter>Rendering\Sprite\Surface</Filter>
+    </ClInclude>
+    <ClInclude Include="TUIVertexCache.h">
+      <Filter>Rendering\Sprite\Surface</Filter>
+    </ClInclude>
+    <ClInclude Include="TMesh.h">
+      <Filter>Rendering\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="TMeshBufferInterface.h">
+      <Filter>Rendering\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="TSubMeshInfo.h">
+      <Filter>Rendering\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="TMeshLoaderInterface.h">
+      <Filter>Rendering\Mesh\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="TAIMeshLoader.h">
+      <Filter>Rendering\Mesh\Loader\AssImp</Filter>
+    </ClInclude>
+    <ClInclude Include="TVertexFormat.h">
+      <Filter>Rendering\Mesh\VertexFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="TVertexFormatEntry.h">
+      <Filter>Rendering\Mesh\VertexFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="TVertexFormatRegister.h">
+      <Filter>Rendering\Mesh\VertexFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="TVertexFormatTypes.h">
+      <Filter>Rendering\Mesh\VertexFormats</Filter>
+    </ClInclude>
+    <ClInclude Include="TD3DVertexFormat.h">
+      <Filter>Rendering\Mesh\VertexFormats\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="TD3DVertexFormatRegister.h">
+      <Filter>Rendering\Mesh\VertexFormats\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="TD3DMeshBuffer.h">
+      <Filter>Rendering\Mesh\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="TVertex.h">
+      <Filter>Rendering\Mesh\VertexTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="TVertexUI.h">
+      <Filter>Rendering\Mesh\VertexTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="TRenderQueue.h">
+      <Filter>Rendering\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="TRenderQueueEntry.h">
+      <Filter>Rendering\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="TRenderQueueManager.h">
+      <Filter>Rendering\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="TShader.h">
+      <Filter>Rendering\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="TD3DShader.h">
+      <Filter>Rendering\Shaders\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="TRendererInterface.h">
+      <Filter>Rendering\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="TRenderState.h">
+      <Filter>Rendering\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="TD3DDevice.h">
+      <Filter>Rendering\Renderer\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="TD3DEventDeviceLost.h">
+      <Filter>Rendering\Renderer\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="TD3DEventDeviceReset.h">
+      <Filter>Rendering\Renderer\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="TD3DRenderer.h">
+      <Filter>Rendering\Renderer\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="TD3DUtil.h">
+      <Filter>Rendering\Renderer\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="TFont.h">
+      <Filter>Rendering\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="TD3DFont.h">
+      <Filter>Rendering\Font\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="TBitmapFont.h">
+      <Filter>Rendering\Font\BitmapFont</Filter>
+    </ClInclude>
+    <ClInclude Include="TGraphicsFactoryInterface.h">
+      <Filter>Rendering\Graphics Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="TD3DGraphicsFactory.h">
+      <Filter>Rendering\Graphics Factory\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="TDirectionalLight.h">
+      <Filter>Rendering\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="TLightManager.h">
+      <Filter>Rendering\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="TUIEntity.h">
+      <Filter>Rendering\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TUIGrid.h">
+      <Filter>Rendering\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TUIGroup.h">
+      <Filter>Rendering\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TUIHelper.h">
+      <Filter>Rendering\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TUIController.h">
+      <Filter>Rendering\UI\Mappings</Filter>
+    </ClInclude>
+    <ClInclude Include="TUIMapping.h">
+      <Filter>Rendering\UI\Mappings</Filter>
+    </ClInclude>
+    <ClInclude Include="TUIMappingContainer.h">
+      <Filter>Rendering\UI\Mappings</Filter>
+    </ClInclude>
+    <ClInclude Include="TUIMappingHandler.h">
+      <Filter>Rendering\UI\Mappings</Filter>
+    </ClInclude>
+    <ClInclude Include="TUIVariableParameter.h">
+      <Filter>Rendering\UI\Mappings</Filter>
+    </ClInclude>
+    <ClInclude Include="TUIVariableResult.h">
+      <Filter>Rendering\UI\Mappings</Filter>
+    </ClInclude>
+    <ClInclude Include="TUIButton.h">
+      <Filter>Rendering\UI\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="TUICursor.h">
+      <Filter>Rendering\UI\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="TUILabel.h">
+      <Filter>Rendering\UI\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="TUISlider.h">
+      <Filter>Rendering\UI\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="TUISprite.h">
+      <Filter>Rendering\UI\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="TUIStateVisibility.h">
+      <Filter>Rendering\UI\Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="TUIScene.h">
+      <Filter>Rendering\UI\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TUISceneEntry.h">
+      <Filter>Rendering\UI\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TAllocHeader.h">
+      <Filter>Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="TMemory.h">
+      <Filter>Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="TMemoryChunkInterface.h">
+      <Filter>Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="TMemoryHeap.h">
+      <Filter>Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="TMemoryManager.h">
+      <Filter>Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="TMemoryPool.h">
+      <Filter>Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="TFileSystemInterface.h">
+      <Filter>File System</Filter>
+    </ClInclude>
+    <ClInclude Include="TDataVariant.h">
+      <Filter>File System\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="TFileStream.h">
+      <Filter>File System\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="TScreenOutputStream.h">
+      <Filter>File System\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="TStreamInterface.h">
+      <Filter>File System\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="TTextStream.h">
+      <Filter>File System\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="TXMLStream.h">
+      <Filter>File System\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="TXMLAttribute.h">
+      <Filter>File System\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="TXMLFile.h">
+      <Filter>File System\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="TXMLObject.h">
+      <Filter>File System\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="TXMLReader.h">
+      <Filter>File System\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="TXMLTagType.h">
+      <Filter>File System\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="TXMLWriter.h">
+      <Filter>File System\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="TBitmap.h">
+      <Filter>File System\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="TWindowsFileSystem.h">
+      <Filter>File System\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="TRefCountedObject.h">
+      <Filter>File System\Resource Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="TResourceManager.h">
+      <Filter>File System\Resource Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="TResourcePool.h">
+      <Filter>File System\Resource Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="TResourceType.h">
+      <Filter>File System\Resource Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="TDebugInterface.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="TDebugRenderer.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="TError.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="TWindowsDebug.h">
+      <Filter>Debug\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="TDirect3D.h">
+      <Filter>Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="TEngine.h">
+      <Filter>Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="TPlatform.h">
+      <Filter>Core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="TDynamicArray.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="TDynamicSet.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="TSingleton.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="TUtil.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="TString.h">
+      <Filter>Core\TString</Filter>
+    </ClInclude>
+    <ClInclude Include="TStringBuilder.h">
+      <Filter>Core\TString</Filter>
+    </ClInclude>
+    <ClInclude Include="TStringHelper.h">
+      <Filter>Core\TString</Filter>
+    </ClInclude>
+    <ClInclude Include="TStringList.h">
+      <Filter>Core\TString</Filter>
+    </ClInclude>
+    <ClInclude Include="TStringPool.h">
+      <Filter>Core\TString</Filter>
+    </ClInclude>
+    <ClInclude Include="TStringPoolEntry.h">
+      <Filter>Core\TString</Filter>
+    </ClInclude>
+    <ClInclude Include="TStringPoolSearch.h">
+      <Filter>Core\TString</Filter>
+    </ClInclude>
+    <ClInclude Include="TTimerInterface.h">
+      <Filter>Core\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="TWindowsTimer.h">
+      <Filter>Core\Timer\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="TRenderableInterface.h">
+      <Filter>Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TSceneEntry.h">
+      <Filter>Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TSceneInterface.h">
+      <Filter>Core\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TSimpleScene.h">
+      <Filter>Core\Scene\Simple Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TApplicationInterface.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="TConfig.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="TServiceCreator.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="TWindowsApplication.h">
+      <Filter>Application\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="TConsole.h">
+      <Filter>Application\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="TConsoleCommandBase.h">
+      <Filter>Application\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="TConsoleCommand_Clear.h">
+      <Filter>Application\Console\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="TConsoleCommand_LogMemoryUsage.h">
+      <Filter>Application\Console\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="TConsoleCommand_Quit.h">
+      <Filter>Application\Console\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="TConsoleCommand_ToggleStats.h">
+      <Filter>Application\Console\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="TEntity.h">
+      <Filter>Core\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="TEntityDefinition.h">
+      <Filter>Core\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="TPlugin.h">
+      <Filter>Core\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="TPluginDefinition.h">
+      <Filter>Core\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="ColliderPlugin.h">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="ColliderPluginDefinition.h">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelPlugin.h">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelPluginDefinition.h">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="SpritePlugin.h">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="SpritePluginDefinition.h">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="TPluginRegister.h">
+      <Filter>Core\Entity\Register</Filter>
+    </ClInclude>
+    <ClInclude Include="TPluginRegisterEntry.h">
+      <Filter>Core\Entity\Register</Filter>
+    </ClInclude>
+    <ClInclude Include="TEventHandler.h">
+      <Filter>Core\Event System\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="TEventHandlerBase.h">
+      <Filter>Core\Event System\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="TEventParamHandler.h">
+      <Filter>Core\Event System\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="TEventParamHandlerBase.h">
+      <Filter>Core\Event System\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="TEvent.h">
+      <Filter>Core\Event System\EventBase</Filter>
+    </ClInclude>
+    <ClInclude Include="TEventListener.h">
+      <Filter>Core\Event System\EventBase</Filter>
+    </ClInclude>
+    <ClInclude Include="TEventParam.h">
+      <Filter>Core\Event System\EventBase</Filter>
+    </ClInclude>
+    <ClInclude Include="TEventRender.h">
+      <Filter>Core\Event System\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="TEventUIRender.h">
+      <Filter>Core\Event System\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="TEventUIUpdate.h">
+      <Filter>Core\Event System\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="TEventUpdate.h">
+      <Filter>Core\Event System\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="TGameState.h">
+      <Filter>Core\Game State</Filter>
+    </ClInclude>
+    <ClInclude Include="TGameStateManager.h">
+      <Filter>Core\Game State</Filter>
+    </ClInclude>
+    <ClInclude Include="TPointLight.h">
+      <Filter>Rendering\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="TLocator.h">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="TGameStats.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="TSpotLight.h">
+      <Filter>Rendering\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="LightPlugin.h">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="LightPluginDefinition.h">
+      <Filter>Core\Entity\DefaultPlugins</Filter>
+    </ClInclude>
+    <ClInclude Include="LightType.h">
+      <Filter>Rendering\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="TDebugRenderEntries.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TMath.inl">
+      <Filter>Math</Filter>
+    </None>
+    <None Include="TMatrix.inl">
+      <Filter>Math\Types</Filter>
+    </None>
+    <None Include="TQuaternion.inl">
+      <Filter>Math\Types</Filter>
+    </None>
+    <None Include="TVector2.inl">
+      <Filter>Math\Types</Filter>
+    </None>
+    <None Include="TVector3.inl">
+      <Filter>Math\Types</Filter>
+    </None>
+    <None Include="TVector4.inl">
+      <Filter>Math\Types</Filter>
+    </None>
+    <None Include="TAABB.inl">
+      <Filter>Math\Geometry</Filter>
+    </None>
+    <None Include="TLine.inl">
+      <Filter>Math\Geometry</Filter>
+    </None>
+    <None Include="TPlane.inl">
+      <Filter>Math\Geometry</Filter>
+    </None>
+    <None Include="TRay.inl">
+      <Filter>Math\Geometry</Filter>
+    </None>
+    <None Include="TSphere.inl">
+      <Filter>Math\Geometry</Filter>
+    </None>
+    <None Include="TUIMappingContainer.inl">
+      <Filter>Rendering\UI\Mappings</Filter>
+    </None>
+    <None Include="TUIMappingHandler.inl">
+      <Filter>Rendering\UI\Mappings</Filter>
+    </None>
+    <None Include="TDynamicArray.inl">
+      <Filter>Core</Filter>
+    </None>
+    <None Include="TDynamicSet.inl">
+      <Filter>Core</Filter>
+    </None>
+    <None Include="TString.inl">
+      <Filter>Core\TString</Filter>
+    </None>
+    <None Include="TEventHandler.inl">
+      <Filter>Core\Event System\Handler</Filter>
+    </None>
+    <None Include="TEventHandlerBase.inl">
+      <Filter>Core\Event System\Handler</Filter>
+    </None>
+    <None Include="TEventParamHandler.inl">
+      <Filter>Core\Event System\Handler</Filter>
+    </None>
+    <None Include="TEventParamHandlerBase.inl">
+      <Filter>Core\Event System\Handler</Filter>
+    </None>
+    <None Include="TEvent.inl">
+      <Filter>Core\Event System\EventBase</Filter>
+    </None>
+    <None Include="TEventParam.inl">
+      <Filter>Core\Event System\EventBase</Filter>
+    </None>
+    <None Include="TLocator.inl">
+      <Filter>Application</Filter>
+    </None>
+  </ItemGroup>
+</Project>

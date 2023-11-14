@@ -1,0 +1,1 @@
+<Shader id="Sky" technique="SkyTech" vertexFormat="PosVertex" renderOrder="10" alphaBlending="false" zcompare="Greater"/>
