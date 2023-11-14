@@ -81,7 +81,7 @@ void GameWorld::Write(TXMLWriter& writer)
 //-------------------------------------------------------------------------------
 void GameWorld::GetAngularDistance(float distance, float angle, TVector3& result)
 {
-	result.Set(cos(angle) * distance, 0.f, -1.f * sin(angle) * distance);
+	result.Set((float)cos(angle) * distance, 0.f, -1.f * (float)sin(angle) * distance);
 }
 
 //-------------------------------------------------------------------------------
