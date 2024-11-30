@@ -6,9 +6,6 @@
     <ClCompile Include="GridGenerator.cpp">
       <Filter>Mesh</Filter>
     </ClCompile>
-    <ClCompile Include="Heightmap.cpp">
-      <Filter>Terrain</Filter>
-    </ClCompile>
     <ClCompile Include="Terrain.cpp">
       <Filter>Terrain</Filter>
     </ClCompile>
@@ -27,17 +24,23 @@
     <ClCompile Include="SphereCreator.cpp">
       <Filter>Mesh</Filter>
     </ClCompile>
-    <ClCompile Include="RandomNumberGenerator.cpp">
-      <Filter>Terrain</Filter>
+    <ClCompile Include="FractalData.cpp">
+      <Filter>Map Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="GaussGen.cpp">
+      <Filter>Map Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="MapGenerator.cpp">
+      <Filter>Map Generator</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldBoxes.cpp">
+      <Filter>World</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
     <ClInclude Include="GridGenerator.h">
       <Filter>Mesh</Filter>
-    </ClInclude>
-    <ClInclude Include="Heightmap.h">
-      <Filter>Terrain</Filter>
     </ClInclude>
     <ClInclude Include="Terrain.h">
       <Filter>Terrain</Filter>
@@ -63,8 +66,20 @@
     <ClInclude Include="SphereCreator.h">
       <Filter>Mesh</Filter>
     </ClInclude>
-    <ClInclude Include="RandomNumberGenerator.h">
-      <Filter>Terrain</Filter>
+    <ClInclude Include="FractalData.h">
+      <Filter>Map Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="GaussGen.h">
+      <Filter>Map Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="MapGenerator.h">
+      <Filter>Map Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="FractalParams.h">
+      <Filter>Map Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldBoxes.h">
+      <Filter>World</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +100,9 @@
     </Filter>
     <Filter Include="Sky">
       <UniqueIdentifier>{c031c903-bcc1-4d30-9daa-1aefb83f4cfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map Generator">
+      <UniqueIdentifier>{30955eea-a922-4df0-95b2-5acc949196d2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

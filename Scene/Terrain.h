@@ -7,7 +7,10 @@
 #include "TEngine.h"
 #endif
 
-class Heightmap;
+#ifndef __FRACTALDATA_H__
+#include "FractalData.h"
+#endif 
+
 struct TVertex;
 
 class Terrain : public TEventListener, public TXMLObject
@@ -36,7 +39,7 @@ private:
 
 	TDynamicSet<TMesh*> m_submeshes;
 
-	Heightmap* m_heightmap;
+	FractalData m_mapData;
 
 	bool m_drawSubgridBounds;
 

@@ -1,11 +1,14 @@
 #include "GameWorld.h"
 #include "GrassBatcher.h"
 #include "Terrain.h"
+#include "WorldBoxes.h"
 
 //-------------------------------------------------------------------------------
 GameWorld::GameWorld(const Terrain* terrain)
 {
 	m_terrain = terrain;
+
+	m_worldBoxContainer = TNew WorldBoxes();
 
 	TXMLReader reader("Assets/Data/World.xml", *this);
 }
@@ -17,6 +20,8 @@ GameWorld::~GameWorld()
 	{
 		TSafeDelete(m_scenery[index]);
 	}
+
+	TSafeDelete(m_worldBoxContainer);
 
 	m_scenery.Clear();
 }
@@ -65,11 +70,13 @@ void GameWorld::FinaliseLoad()
 
 	for (unsigned int index = 0; index < m_scenery.GetSize(); index++)
 	{
+		// snap to floor
 		TVector3 position = m_scenery[index]->GetPosition();
-
 		position.y = m_terrain->GetHeight(position.x, position.z);
-
 		m_scenery[index]->SetPosition(position);
+
+		// attach to raycast list
+		m_worldBoxContainer->AddEntity(m_scenery[index]);
 	}
 }
 
@@ -100,4 +107,10 @@ void GameWorld::BuildGrassPatch(const TVector3& center)
 
 		GrassBatcher::Get()->AddGrassPosition(grassPosition);
 	}
+}
+
+//-------------------------------------------------------------------------------
+TEntity* GameWorld::GetPickedEntity(const TRay& ray)
+{
+	return m_worldBoxContainer->PickEntity(ray);
 }

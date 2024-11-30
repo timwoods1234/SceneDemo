@@ -1,13 +1,17 @@
 #include "Terrain.h"
-#include "Heightmap.h"
 #include "GridGenerator.h"
 #include "TVertex.h"
 #include "ModelPlugin.h"
+#include "MapGenerator.h"
+#include "FractalParams.h"
 
 //-------------------------------------------------------------------------------
 Terrain::Terrain()
 :	m_drawSubgridBounds(false)
-
+,	m_texture0(NULL)
+,	m_texture1(NULL)
+,	m_texture2(NULL)
+,	m_blendMap(NULL)
 {
 	TEventRender::Get()->Register(this, &Terrain::Render);
 
@@ -26,8 +30,6 @@ Terrain::~Terrain()
 	{
 		TMesh::Release(m_submeshes[index]);
 	}
-
-	TSafeDelete(m_heightmap);
 
 	TEventRender::Get()->Unregister(this, &Terrain::Render);
 }
@@ -72,10 +74,10 @@ float Terrain::GetHeight(float x, float z) const
 	int row = (int)floorf(localX);
 	int col = (int)floorf(localZ);
 
-	float a = m_heightmap->GetHeight(row, col);
-	float b = m_heightmap->GetHeight(row, col + 1);
-	float c = m_heightmap->GetHeight(row + 1, col);
-	float d = m_heightmap->GetHeight(row + 1, col + 1);
+	float a = m_mapData.Get(row, col);
+	float b = m_mapData.Get(row, col + 1);
+	float c = m_mapData.Get(row + 1, col);
+	float d = m_mapData.Get(row + 1, col + 1);
 
 	float relativeCol = localZ - (float)col;
 	float relativeRow = localX - (float)row;
@@ -117,12 +119,12 @@ void Terrain::BuildGeometry()
 		int col = index / m_width;
 		int row = index % m_width;
 
-		verts[index].position.y = m_heightmap->GetHeight(row, col);
+		verts[index].position.y = m_mapData.Get(row, col);
 
 		if (index < verts.GetSize() - m_width)
 		{
-			TVector3 tangent1 = TVector3(verts[index + 1].position.x, m_heightmap->GetHeight(row, col + 1), verts[index + 1].position.z) - verts[index].position;
-			TVector3 tangent2 = TVector3(verts[index + m_width].position.x, m_heightmap->GetHeight(row + 1, col), verts[index + m_width].position.z) - verts[index].position;
+			TVector3 tangent1 = TVector3(verts[index + 1].position.x, m_mapData.Get(row, col + 1), verts[index + 1].position.z) - verts[index].position;
+			TVector3 tangent2 = TVector3(verts[index + m_width].position.x, m_mapData.Get(row + 1, col), verts[index + m_width].position.z) - verts[index].position;
 			verts[index].normal = CrossProduct(tangent1, tangent2);
 		}
 		else
@@ -231,24 +233,89 @@ void Terrain::HandleLoadAttributes(TDynamicSet<TDataVariant>& objects)
 	m_width = TDataVariant::Find("width", objects).GetInt();
 	m_depth = TDataVariant::Find("depth", objects).GetInt();
 
-	TString heightmapFilename = TDataVariant::Find("heightmap", objects).GetString();
-	m_heightmap = TNew Heightmap(heightmapFilename.GetPointer(), m_heightScale, m_width, m_depth);
-
 	TString tex0 = TDataVariant::Find("tex0", objects).GetString();
 	TString tex1 = TDataVariant::Find("tex1", objects).GetString();
 	TString tex2 = TDataVariant::Find("tex2", objects).GetString();
-	TString blendMap = TDataVariant::Find("blendmap", objects).GetString();
 
 	m_texture0 = TTexture::Acquire(tex0.GetPointer());
 	m_texture1 = TTexture::Acquire(tex1.GetPointer());
 	m_texture2 = TTexture::Acquire(tex2.GetPointer());
-
-	m_blendMap = TTexture::Acquire(blendMap.GetPointer());
 }
 
 //-------------------------------------------------------------------------------
 void Terrain::FinaliseLoad()
 {
+	MapGenerator mapGenerator;
+	FractalParams mapParams;
+
+	// TODO: read params from file
+	// TODO: dynamically generate scale to accomodate width/height
+	mapParams.scale = 8;
+	mapParams.useAddition = false;
+	mapParams.shape = 1.0;
+	mapParams.standardDeviation = 18.0;
+	mapParams.smoothCount = 1;
+
+	mapGenerator.Generate(mapParams, m_mapData);
+
+	// generate blend map from height map
+	m_blendMap = TTexture::Create(m_width, m_depth);
+
+	if (m_blendMap != NULL)
+	{
+		TDynamicArray<TColor> values;
+		values.Resize(m_width * m_depth);
+
+		for (int width = 0; width < m_width; width++)
+		{
+			for (int depth = 0; depth < m_depth; depth++)
+			{
+				int index = depth * m_depth + width;
+				float height = m_mapData.Get(width, depth);
+
+				float heightScale = height / m_mapData.GetMax();
+
+				if (heightScale >= 0.6f)
+				{
+					if (heightScale >= 0.8f)
+					{
+						// top value (blue map)
+						values[index].Set(0.f, 0.f, 1.f, 1.f);
+					}
+					else
+					{
+						// mid value (red/blue)
+						values[index].Set(1.f, 0.f, 1.f, 1.f);
+					}
+				}
+				else
+				{
+					if (heightScale >= 0.4f)
+					{
+						// mid-low value (red map)
+						values[index].Set(1.f, 0.f, 0.f, 1.f);
+					}
+					else if (heightScale >= 0.2)
+					{
+						// low value (red/green)
+						values[index].Set(1.f, 1.f, 0.f, 1.f);
+					}
+					else
+					{
+						// bottom value (green map)
+						values[index].Set(0.f, 1.f, 0.f, 1.f);
+					}
+				}
+			}
+		}
+
+		m_blendMap->SetPixelData(values);
+	}
+	else
+	{
+		TASSERT(false, "Terrain could not create blend map");
+	}
+
 	BuildGeometry();
 
 	TShader* terrainShader = TShader::Acquire("Terrain");

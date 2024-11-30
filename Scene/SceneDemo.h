@@ -22,6 +22,8 @@ public:
 
 	void Render();
 
+	void RenderDebug();
+
 private:
 	TScreenOutputStream* m_outputStream;
 
@@ -34,6 +36,8 @@ private:
 	TDirectionalLight m_light;
 
 	Sky* m_sky;
+
+	TEntity* m_pickedEntity;
 };
 
 #endif

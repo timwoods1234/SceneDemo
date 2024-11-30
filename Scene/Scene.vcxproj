@@ -74,10 +74,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\TEngine</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\TEngine\TEngine</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>..\Debug;$(ProjectDir)..\TEngine\3rd Party\assimp\lib;$(ProjectDir)..\TEngine\3rd Party\directx\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\Debug;$(ProjectDir)..\..\TEngine\TEngine\3rd Party\assimp\lib;$(ProjectDir)..\..\TEngine\TEngine\3rd Party\directx\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -118,31 +118,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FractalData.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameWorld.cpp" />
+    <ClCompile Include="GaussGen.cpp" />
     <ClCompile Include="GrassBatcher.cpp" />
     <ClCompile Include="GridGenerator.cpp" />
-    <ClCompile Include="Heightmap.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="RandomNumberGenerator.cpp" />
+    <ClCompile Include="MapGenerator.cpp" />
     <ClCompile Include="SceneDemo.cpp" />
     <ClCompile Include="Sky.cpp" />
     <ClCompile Include="SphereCreator.cpp" />
     <ClCompile Include="Terrain.cpp" />
+    <ClCompile Include="WorldBoxes.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FractalData.h" />
+    <ClInclude Include="FractalParams.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameWorld.h" />
+    <ClInclude Include="GaussGen.h" />
     <ClInclude Include="GrassBatcher.h" />
     <ClInclude Include="GrassVertex.h" />
     <ClInclude Include="GridGenerator.h" />
-    <ClInclude Include="Heightmap.h" />
+    <ClInclude Include="MapGenerator.h" />
     <ClInclude Include="PosVertex.h" />
-    <ClInclude Include="RandomNumberGenerator.h" />
     <ClInclude Include="SceneDemo.h" />
     <ClInclude Include="Sky.h" />
     <ClInclude Include="SphereCreator.h" />
     <ClInclude Include="Terrain.h" />
+    <ClInclude Include="WorldBoxes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

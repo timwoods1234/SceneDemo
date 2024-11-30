@@ -8,7 +8,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Scene", "Scene\Scene.vcxpro
 		{B02FF068-5461-4A41-90D4-76DCB3C2F595} = {B02FF068-5461-4A41-90D4-76DCB3C2F595}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tengine", "TEngine\Tengine.vcxproj", "{B02FF068-5461-4A41-90D4-76DCB3C2F595}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tengine", "..\TEngine\TEngine\Tengine.vcxproj", "{B02FF068-5461-4A41-90D4-76DCB3C2F595}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

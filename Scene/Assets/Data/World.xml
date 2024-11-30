@@ -29,44 +29,4 @@
 			<Direction x="-1" y="1" z="1"/>
 		</Light>
 	</Entity>
-	
-	<GrassPosition x="-49" z="16"/>
-	<GrassPosition x="-53" z="2"/>
-	<GrassPosition x="-45" z="-8"/>
-	<GrassPosition x="-36" z="-8"/>
-	<GrassPosition x="-28" z="-2"/>
-	<GrassPosition x="-26" z="6"/>
-	<GrassPosition x="-31" z="16"/>
-	<GrassPosition x="-37" z="26"/>
-	<GrassPosition x="-43" z="37"/>
-	<GrassPosition x="-49" z="47"/>
-	<GrassPosition x="-55" z="57"/>
-	<GrassPosition x="-58" z="67"/>
-	<GrassPosition x="-46" z="74"/>
-	<GrassPosition x="-36" z="80"/>
-	<GrassPosition x="-25" z="83"/>
-	<GrassPosition x="-19" z="75"/>
-	<GrassPosition x="-24" z="67"/>
-	<GrassPosition x="-34" z="65"/>
-	<GrassPosition x="-40" z="67"/>
-	<GrassPosition x="-99" z="-7"/>
-	<GrassPosition x="-90" z="10"/>
-	<GrassPosition x="-83" z="19"/>
-	<GrassPosition x="-82" z="33"/>
-	<GrassPosition x="-69" z="39"/>
-	<GrassPosition x="-59" z="34"/>
-	<GrassPosition x="-56" z="21"/>
-	<GrassPosition x="-53" z="6"/>
-	<GrassPosition x="88" z="37"/>
-	<GrassPosition x="89" z="50"/>
-	<GrassPosition x="91" z="61"/>
-	<GrassPosition x="84" z="68"/>
-	<GrassPosition x="69" z="66"/>
-	<GrassPosition x="63" z="75"/>
-	<GrassPosition x="73" z="81"/>
-	<GrassPosition x="86" z="83"/>
-	<GrassPosition x="95" z="89"/>
-	<GrassPosition x="93" z="103"/>
-	<GrassPosition x="86" z="112"/>
-	<GrassPosition x="75" z="112"/>
 </World>

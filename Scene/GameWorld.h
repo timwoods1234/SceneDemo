@@ -6,6 +6,7 @@
 #endif
 
 class Terrain;
+class WorldBoxes;
 
 class GameWorld : public TXMLObject
 {
@@ -22,10 +23,14 @@ public:
 
 		void Write(TXMLWriter& writer);
 
+		TEntity* GetPickedEntity(const TRay& ray);
+
 private:
 	void BuildGrassPatch(const TVector3& center);
 
 	const Terrain* m_terrain;
+
+	WorldBoxes* m_worldBoxContainer;
 
 	TDynamicSet<TEntity*> m_scenery;
 
